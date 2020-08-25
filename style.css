@@ -5,6 +5,8 @@ body {
     padding: 0px 8px;
     margin: auto;
     height: 100%;
+    -webkit-font-smoothing: antialiased;
+
 }
 main {
     max-width: 1140px;
@@ -59,7 +61,7 @@ main {
 }
 #hero {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     /* align-items: center; */
 }
 img {
@@ -102,6 +104,7 @@ img {
   
 .hero-text {
     margin-top: 32px;
+    margin-left: 56px;
 }
 .slide-in-right {
 	-webkit-animation: slide-in-right 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) 800ms both;
@@ -123,8 +126,8 @@ img {
   }
   @keyframes slide-in-right {
     0% {
-      -webkit-transform: translateX(200px);
-              transform: translateX(200px);
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
       opacity: 0;
     }
     100% {
@@ -187,7 +190,7 @@ button {
     border-radius: 1px;
     border: none;
     padding: 12px 24px;
-    box-sizing: content-box;
+    box-sizing: border-box;
     cursor: pointer;
     
 }
@@ -199,6 +202,9 @@ button:hover {
     border-radius: 1px;
     color: #526BE9;
     cursor: pointer;
+    transition: background 300ms ease-in-out;
+    transition: border 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
 }
 .secondary {
     display: flex;
@@ -244,7 +250,7 @@ i {
     .logo-name {
         display: inline-block;
         font-family: 'Playfair Display', serif;
-        font-size: 36px;
+        font-size: 28px;
         color: rgb(0, 0, 0);
         font-weight: 500;
         margin: 0;
@@ -256,13 +262,13 @@ i {
         margin-right: 4px;
     }
     .hamburger-icon  {
-        width: 48px;
-        height: 1px;
+        width: 40px;
+        height: 0px;
         border: 1px solid 0,0,0,1
     }
     .hamburger-icon1  {
-        width: 48px;
-        height: 1px;
+        width: 40px;
+        height: 0px;
         border: 1px solid 0,0,0,1
     }
     #hero {
@@ -280,6 +286,7 @@ i {
     .hero-text {
         margin-top: 16px;
         margin-bottom: 32px;
+        margin-left: 0;
     }
     .body {
         width: auto;
@@ -288,5 +295,36 @@ i {
     i {
         color: #000000;
     }
+    .slide-in-right {
+        -webkit-animation: slide-in-right 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) 800ms both;
+                animation: slide-in-right 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) 800ms both;
+    }
+    
+    
+     @-webkit-keyframes slide-in-right {
+        0% {
+          -webkit-transform: translateX(50px);
+                  transform: translateX(50px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      @keyframes slide-in-right {
+        0% {
+          -webkit-transform: translateX(50px);
+                  transform: translateX(50px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    
     
 }
