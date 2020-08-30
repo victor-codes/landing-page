@@ -262,14 +262,14 @@ i {
         margin-right: 4px;
     }
     .hamburger-icon  {
-        width: 2px;
+        width: 23px;
         height: 0px;
-        border: 1px solid 0,0,0,1
+        border: 0.5px solid 0,0,0,1
     }
     .hamburger-icon1  {
         width: 23px;
         height: 0px;
-        border: 1px solid 0,0,0,1
+        border: 0.5px solid 0,0,0,1
     }
     #hero {
         flex-direction: column;
