@@ -5,6 +5,7 @@ body {
     padding: 0px 8px;
     margin: auto;
     height: 100%;
+    background-repeat: no-repeat;
     -webkit-font-smoothing: antialiased;
 
 }
@@ -63,6 +64,7 @@ main {
 #hero {
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
     /* align-items: center; */
 }
 img {
@@ -260,7 +262,7 @@ i {
         display: inline-block;
         width: 24px;
         height: 24px;
-        margin-top: 28px;
+        margin-top: 24px;
         margin-right: 4px;
     }
     .hamburger-icon  {
