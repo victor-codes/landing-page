@@ -32,6 +32,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     height: 80px;
     /* margin: 32px 0; */
     margin-top: 0px;
@@ -50,14 +51,14 @@ main {
     width: 56px;
     /* margin-bottom: 16px; */
     background: linear-gradient(0deg, #000000, #000000);
-    border: 2px solid rgba(0, 0, 0, 1)
+    border: 1.5px solid rgba(0, 0, 0, 1)
 }
 .hamburger-icon1 {
     height: 1px;
     width: 56px;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     background: linear-gradient(0deg, #000000, #000000);
-    border: 2px solid rgba(0, 0, 0, 1)
+    border: 1.5px solid rgba(0, 0, 0, 1)
 }
 #hero {
     display: flex;
@@ -256,20 +257,22 @@ i {
         margin: 0;
     }
     .hamburger {
+        display: inline-block;
         width: 24px;
         height: 24px;
-        margin-top: 6px;
+        margin-top: 20px;
         margin-right: 4px;
     }
     .hamburger-icon  {
         width: 23px;
-        height: 0px;
-        border: 0.5px solid 0,0,0,1
+        height: 2px;
+        border: 0px solid rgba(0, 0, 0, 1);
     }
     .hamburger-icon1  {
         width: 23px;
-        height: 0px;
-        border: 0.5px solid 0,0,0,1
+        height: 2px;
+        border: 0px solid rgba(0, 0, 0, 1);
+        margin-bottom: 4px;
     }
     #hero {
         flex-direction: column;
@@ -278,7 +281,7 @@ i {
         height: 85vh;
         width: 100%;
         object-fit: cover;
-        box-shadow: 0px 0px 224px 75px rgba(0, 0, 0, 0.01);
+        box-shadow: 0px 0px 224px 75px rgba(0, 0, 0, 0.1);
     }
     .secondary {
         margin-top: 16px;
