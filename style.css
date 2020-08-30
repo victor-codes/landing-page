@@ -256,18 +256,18 @@ i {
         margin: 0;
     }
     .hamburger {
-        width: 48px;
+        width: 24px;
         height: 24px;
         margin-top: 6px;
         margin-right: 4px;
     }
     .hamburger-icon  {
-        width: 40px;
+        width: 2px;
         height: 0px;
         border: 1px solid 0,0,0,1
     }
     .hamburger-icon1  {
-        width: 40px;
+        width: 23px;
         height: 0px;
         border: 1px solid 0,0,0,1
     }
