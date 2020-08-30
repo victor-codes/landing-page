@@ -260,7 +260,7 @@ i {
         display: inline-block;
         width: 24px;
         height: 24px;
-        margin-top: 20px;
+        margin-top: 28px;
         margin-right: 4px;
     }
     .hamburger-icon  {
@@ -272,7 +272,7 @@ i {
         width: 23px;
         height: 2px;
         border: 0px solid rgba(0, 0, 0, 1);
-        margin-bottom: 4px;
+        margin-bottom: 6px;
     }
     #hero {
         flex-direction: column;
