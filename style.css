@@ -72,6 +72,7 @@ img {
     height: 560px;
     object-fit: cover;
     box-shadow: 0px 0px 224px 75px rgba(0, 0, 0, 0.2);
+    image-rendering: pixelated;
     
 }
 
