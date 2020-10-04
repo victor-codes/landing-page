@@ -1,13 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display&family=Poppins:wght@500&display=swap');
 
 body {
-    background: linear-gradient(270deg, #F5F5F5 64.05%, #E98E52 64.1%);
+    background: #F5F5F5;
     padding: 0px 8px;
     margin: auto;
     height: 100%;
     background-repeat: no-repeat;
     -webkit-font-smoothing: antialiased;
 
+}
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    min-height: 900px;
+    background: url(https://res.cloudinary.com/victorcodes/image/upload/v1601831215/defaultbackground_dmjbxa.png);
+    z-index: -10;
 }
 main {
     max-width: 1140px;
@@ -27,6 +36,9 @@ main {
     color: rgb(0, 0, 0);
     font-weight: 500;
     margin: 0;
+}
+.hero-left {
+    margin-left: 24px;
 }
 
 #nav-bar {
@@ -176,24 +188,25 @@ img {
     font-size: 24px;
     line-height: 33px;
     margin-top: 0;
-    margin-bottom: 40px;
-    width: 456px;
-    height: 99px;
+    margin-bottom: 0px;
+    width: fit-content;
+    height:fit-content;
     color: #333333;
 }
 button {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 33px;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 40px;
     letter-spacing: 0.004em;
     text-transform: uppercase;
     color: #FFFFFF;
     background: #526BE9;
     border-radius: 1px;
     border: none;
-    padding: 12px 24px;
+    padding: 16px 24px;
     box-sizing: border-box;
     cursor: pointer;
     
@@ -202,13 +215,11 @@ button:hover {
     background: #ffffff;
     border: 4px solid #526BE9;
     box-sizing: border-box;
-    padding: 8px 20px;
+    padding: 12px 20px;
     border-radius: 1px;
     color: #526BE9;
     cursor: pointer;
-    transition: background 300ms ease-in-out;
-    transition: border 300ms ease-in-out;
-    transition: color 300ms ease-in-out;
+
 }
 .secondary {
     display: flex;
@@ -232,10 +243,16 @@ i {
 .chervon {
     display: flex;
 }
-.previous{
+.chervon-left, .chervon-right{
+    cursor: pointer;
+}
+.previous {
     /* display: flex; */
     /* align-items: center; */
     margin-right: 16px;
+}
+ .chervon-left{
+    margin-right: 20px;
 }
 
 
@@ -250,6 +267,9 @@ i {
     }
     #nav-bar {
         margin-bottom: 24px;
+    }
+    #background {
+        display: none;
     }
     .logo-name {
         display: inline-block;
@@ -279,6 +299,9 @@ i {
     }
     #hero {
         flex-direction: column;
+    }
+    .hero-left {
+        margin: 0;
     }
     img {
         height: 85vh;

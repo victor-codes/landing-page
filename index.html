@@ -13,68 +13,70 @@
 </head>
 
 <body>
-        <main>
-            <nav id="nav-bar">
-                <a class="logo-name" href="https://victor-codes.github.io/landing-pages/">Windspan</a>
-                <div class="hamburger">
-                    <div class="hamburger-icon1"></div>
-                    <div class="hamburger-icon"></div>
-                </div>
-            </nav>
-            <div id="hero">
-                <div class="hero-left">
-                    <div  class="slide-in-left">
+    <div id="background">
+        
+    </div>
+    <main>
+        <nav id="nav-bar">
+            <a class="logo-name" href="https://victor-codes.github.io/landing-pages/">Windspan</a>
+            <div class="hamburger">
+                <div class="hamburger-icon1"></div>
+                <div class="hamburger-icon"></div>
+            </div>
+        </nav>
+        <div id="hero">
+            <div class="hero-left">
+                <div class="slide-in-left">
 
-                        <img class="hero-image"
-                        src="https://images.unsplash.com/photo-1472787563973-2f710070695d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+                    <img id="image" class="hero-image"
+                        src="https://res.cloudinary.com/victorcodes/image/upload/c_fit,h_970,q_auto:best,w_980/v1601672283/default-image.jpg"
                         alt="image of a bird">
-                    </div>
-                    <div class="secondary">
-
-                        <div class="social-link">
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-linkedin-in"></i>
-                            <i class="fab fa-instagram"></i>
-                        </div>
-                        <div class="chervon">
-                            <div class="chervon-left">
-                                <svg class="previous" width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="48" height="48" fill="#c4c4c4" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M20.897 24L29.6485 32.7515L27.9515 34.4486L17.5029 24L27.9515 13.5515L29.6485 15.2486L20.897 24Z"
-                                        fill="black" />
-                                </svg>
-
-                                <!-- <i class="fa fa-chevron-left"></i> -->
-                            </div>
-                            <div class="chervon-right">
-                                <svg class="next" width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="48" height="48" fill="#c4c4c4" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M27.103 24L18.3516 15.2486L20.0486 13.5515L30.4971 24L20.0486 34.4486L18.3516 32.7515L27.103 24Z"
-                                        fill="black" />
-                                </svg>
-
-                                <!-- <i class="fa fa-chevron-right"></i> -->
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="slide-in-right">
+                <div class="secondary">
 
-                    <div class="hero-text">
-                        <p class="overline">bird watching</p>
-                        <h2 class="title">Beauty in Birds for Everyone</h2>
-                        <p class="body">Start your journey finding amazing birds using wingspan the new bird finding iOS and
-                            Andriod application.</p>
-                            <button>get started</button>
+                    <div class="social-link">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="chervon">
+                        <div id="prev-image" class="chervon-left" onclick="prevImage()">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="48" height="48" fill="#C4C4C4"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.897 24L29.6485 32.7515L27.9515 34.4486L17.5029 24L27.9515 13.5515L29.6485 15.2486L20.897 24Z" fill="black"/>
+                                </svg>
+                                
+
+                            <!-- <i class="fa fa-chevron-left"></i> -->
                         </div>
+                        <div id="next-image" class="chervon-right" onclick="nextImage()">
+                            <svg class="next" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="48" height="48" fill="#c4c4c4" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M27.103 24L18.3516 15.2486L20.0486 13.5515L30.4971 24L20.0486 34.4486L18.3516 32.7515L27.103 24Z"
+                                    fill="black" />
+                            </svg>
+
+                            <!-- <i class="fa fa-chevron-right"></i> -->
+                        </div>
+                    </div>
                 </div>
             </div>
-        </main>
+            <div class="slide-in-right">
+
+                <div class="hero-text">
+                    <p class="overline">bird watching</p>
+                    <h2 class="title">Beauty in Birds for Everyone</h2>
+                    <p class="body">Start your journey finding amazing birds using wingspan the new bird finding iOS and
+                        Andriod application.</p>
+                    <button>get started</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>
