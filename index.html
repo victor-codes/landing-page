@@ -18,25 +18,33 @@
             <nav id="nav-bar">
                 <a class="logo-name" href="https://victor-codes.github.io/landing-pages/">Windspan</a>
                 <div class="hamburger" onclick="openNav()">
-                    <div class="hamburger-icon1"></div>
-                    <div class="hamburger-icon"></div>
+                    <div>
+                        <div class="hamburger-icon1"></div>
+                        <div class="hamburger-icon"></div>
+                    </div>
                 </div>
             </nav>
-            <div id="hidden-navbar-container" class="hidden-navbar-container slide-left">
-                <div id="hidden-navbar" class="hidden-navbar">
+            <div id="hiddenNavbar">
 
-                    <div class="ham-cancel" onclick="closeNav()">
-                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M30.4558 30.87L5 5.41418L6.41421 3.99997L31.8701 29.4558L30.4558 30.87Z" fill="black"/>
-                            <path d="M30.4558 4.41415L5 29.87L6.41421 31.2842L31.8701 5.82836L30.4558 4.41415Z" fill="black"/>
+                <div id="hidden-navbar-container" class="hidden-navbar-container ">
+                    <div id="hidden-navbar" class="hidden-navbar slide-left">
+
+                        <div class="ham-cancel" onclick="closeNav()">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30.4558 30.87L5 5.41418L6.41421 3.99997L31.8701 29.4558L30.4558 30.87Z"
+                                    fill="black" />
+                                <path d="M30.4558 4.41415L5 29.87L6.41421 31.2842L31.8701 5.82836L30.4558 4.41415Z"
+                                    fill="black" />
                             </svg>
-                            
-                            
-                    </div>
-                    <div class="overlay-content">
-                        <a href="" class="nav-link">Home</a>
-                        <a href="" class="nav-link">About</a>
-                        <a href="" class="nav-link">Contact</a>
+
+
+                        </div>
+                        <div class="overlay-content">
+                            <a href="" class="nav-link">Home</a>
+                            <a href="" class="nav-link">About</a>
+                            <a href="" class="nav-link">Contact</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -46,7 +54,7 @@
                 <div class="hero-left">
                     <div class="slide-in-left">
 
-                        <img id="image" class="hero-image"
+                        <img id="image" class="hero-image" loading="lazy"
                             src="https://res.cloudinary.com/victorcodes/image/upload/c_fit,h_970,q_auto:best,w_980/v1601672283/default-image.jpg"
                             alt="image of a bird">
                     </div>
@@ -88,26 +96,34 @@
                             </svg>
                         </div>
                         <div class="chervon">
-                            <button id="prev-image" class="chervon-left" onclick="prevImage()">
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="48" height="48" fill="#C4C4C4" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M20.897 24L29.6485 32.7515L27.9515 34.4486L17.5029 24L27.9515 13.5515L29.6485 15.2486L20.897 24Z"
-                                        fill="black" />
-                                </svg>
+                            <button aria-label="Image and background slide left" id="prev-image" class="chervon-left"
+                                onclick="prevImage()">
+                                <span aria-label="hidden">
+
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="48" height="48" fill="#C4C4C4" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M20.897 24L29.6485 32.7515L27.9515 34.4486L17.5029 24L27.9515 13.5515L29.6485 15.2486L20.897 24Z"
+                                            fill="black" />
+                                    </svg>
+                                </span>
 
 
                                 <!-- <i class="fa fa-chevron-left"></i> -->
                             </button>
-                            <button id="next-image" class="chervon-right" onclick="nextImage()">
-                                <svg class="next" width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="48" height="48" fill="#c4c4c4" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M27.103 24L18.3516 15.2486L20.0486 13.5515L30.4971 24L20.0486 34.4486L18.3516 32.7515L27.103 24Z"
-                                        fill="black" />
-                                </svg>
+                            <button aria-label="Image and background slide right" id="next-image" class="chervon-right"
+                                onclick="nextImage()">
+                                <span aria-label="hidden">
+
+                                    <svg class="next" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="48" height="48" fill="#c4c4c4" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M27.103 24L18.3516 15.2486L20.0486 13.5515L30.4971 24L20.0486 34.4486L18.3516 32.7515L27.103 24Z"
+                                            fill="black" />
+                                    </svg>
+                                </span>
 
                                 <!-- <i class="fa fa-chevron-right"></i> -->
                             </button>
@@ -127,14 +143,7 @@
                 </div>
             </div>
         </main </div>
-        <link rel="preload" href="used-later.js" as="script">
-        <!-- ... -->
-        <script>
-            var usedLaterScript = document.createElement('script');
-            usedLaterScript.src = 'index.js';
-            document.body.appendChild(usedLaterScript);
-        </script>
-        <!-- <script type="text/javascript" src="index.js"></script> -->
+        <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>

@@ -93,11 +93,14 @@ document.getElementById('background').style.transition = 'all .2s ease-in 50ms';
 //         }
 //     }
 // }
-// function openNav() {
-//     document.getElementById('hidden-navbar-container').style.display = 'block';
-// }
-// function closeNav() {
-//     document.getElementById('hidden-navbar-container').style.display = 'none'
-// }
+function openNav() {
+    document.getElementById('hiddenNavbar').style.display = 'block';
+    // document.getElementById('slide-in-right').style.contentVisibility = 'hidden';
+    // document.getElementById('hero').style.display = 'none';
+}
+function closeNav() {
+    document.getElementById('hiddenNavbar').style.display = 'none'
+    // document.getElementById('hero').style.display = 'flex';
+}
 
 
