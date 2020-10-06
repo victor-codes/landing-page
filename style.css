@@ -26,7 +26,7 @@ body {
     left: 0;
     width: 35%;
     min-height: 900px;
-    background: url(https://res.cloudinary.com/victorcodes/image/upload/v1601831215/defaultbackground_dmjbxa.png);
+    background-color: #E98E52;
     z-index: -10;
 }
 
@@ -69,12 +69,12 @@ body {
 }
 
 .slide-left {
-    animation: hidden-navbar 900ms linear 0s both;
+    animation: hidden-navbar 1500ms linear 0s both;
 }
 
 @keyframes hidden-navbar {
     0% {
-        right: -50%;
+        right: -80%;
     }
 
     100% {
