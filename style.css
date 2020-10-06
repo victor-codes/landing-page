@@ -446,8 +446,6 @@ only screen and (max-width: 768px) {
     }
 
     .slide-in-right {
-        position: relative;
-        z-index: -10;
         -webkit-animation: slide-in-right 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) 800ms both;
         animation: slide-in-right 1.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) 800ms both;
     }
